@@ -11,20 +11,20 @@
 
 <body>
 
-  <div class="overlay">
-    <form class="buy-form">
-      <div class="form-group">
+  <form class="overlay">
+    <section class="buy-form">
+      <article class="form-group">
         <label class="nameBrands"></label>
-      </div>
-      <div class="form-group">
+      </article>
+      <article class="form-group">
         <label for="quantity">Количество:</label>
         <input type="number" id="quantity" name="quantity" min="1" max="99" value="1" required>
-      </div>
-      <div class="form-group color-form">
+      </article>
+      <article class="form-group color-form">
         <label>Цвет:</label>
-        <div>
+        <article>
           <ul class="cp">
-            <li class="cp__color cp__color--purple active"><input type="radio" name="color" value="Фиолетовый" required
+            <li class="cp__color cp__color--purple active_color"><input type="radio" name="color" value="Фиолетовый" required
                 checked></li>
             <li class="cp__color cp__color--tomato"><input type="radio" name="color" value="Красный" required></li>
             <li class="cp__color cp__color--grey"><input type="radio" name="color" value="Серый" required></li>
@@ -32,83 +32,80 @@
             <li class="cp__color cp__color--orange"><input type="radio" name="color" id="color1" value="Оранженвый"
                 required></li>
           </ul>
-        </div>
-      </div>
-      <div class="form-group">
+        </article>
+      </article>
+      <article class="form-group">
         <label for="comment">Комментарий (не более 2000 символов):</label>
         <textarea id="comment" name="comment" rows="5" maxlength="2000"></textarea>
-      </div>
-      <div class="form-group btn">
+      </article>
+      <article class="form-group btn">
         <button type="submit" class="buy-submit">Купить</button>
         <button type="button" class="buy-close">Закрыть</button>
-      </div>
-    </form>
-  </div>
+      </article>
+    </section>
+  </form>
 
 
 
 
 
-  <div class="menu">
-    <div class="burger-menu">
+  <header class="menu">
+    <nav class="burger-menu">
       <span class="burger-menu-line"></span>
       <span class="burger-menu-line"></span>
       <span class="burger-menu-line"></span>
-    </div>
+    </nav>
     <ul>
       <li><a href="#category1">Asics</a></li>
       <li><a href="#category2">Adidas</a></li>
       <li><a href="#category3">Nike</a></li>
     </ul>
     <button class="theme">день</button>
-  </div>
-  <div class="dropdown-menu">
+  </header>
+  <nav class="dropdown-menu">
     <ul>
       <li><a href="#category1">Asics</a></li>
       <li><a href="#category2">Adidas</a></li>
       <li><a href="#category3">Nike</a></li>
     </ul>
-  </div>
+  </nav>
 
-  <div class="categories">
+  <main class="categories">
 
-    <div class="category" id="category1">
+    <section class="category" id="category1">
       <h2 class="brand">Asics</h2>
-      <div class="products" id="asics">
-      </div>
-    </div>
+      <section class="products" id="asics"></section>
+    </section>
 
-    <div class="category" id="category2">
+    <section class="category" id="category2">
       <h2 class="brand">Adidas</h2>
-      <div class="products" id="adidas">
-      </div>
-    </div>
+      <section class="products" id="adidas"></section>
+    </section>
 
-    <div class="category" id="category3">
+    <section class="category" id="category3">
       <h2 class="brand">Nike</h2>
-      <div class="products" id="nike">
-      </div>
-    </div>
+      <section class="products" id="nike"></section>
+    </section>
 
-  </div>
+  </main>
 
-  <div class="list">
+  <section class="list">
     <a href="#category1">
-      <div class="listItem">
+      <nav class="listItem">
         <p>Asics</p>
-      </div>
+      </nav>
     </a>
     <a href="#category2">
-      <div class="listItem">
+      <nav class="listItem">
         <p>Adidas</p>
-      </div>
+      </nav>
     </a>
     <a href="#category3">
-      <div class="listItem">
+      <nav class="listItem">
         <p>Nike</p>
-      </div>
+      </nav>
     </a>
-  </div>
+  </section>
   <a href="#" class="back-to-top">^</a>
   <script src="./script.js"></script>
 </body>
