@@ -45,13 +45,18 @@ function getDayInfo(dateStr) {
 
 // функция для создания карточек
 function createCard(src, alt, name, date, category) {
-  let productCard = document.createElement('div');
+  let productCard = document.createElement('article');
   productCard.classList.add('product');
+
+  let productFigure = document.createElement('figure');
+  productFigure.classList.add('product-figure');
 
   let productImage = document.createElement('img');
   productImage.classList.add('product-image');
   productImage.src = src;
   productImage.alt = alt;
+
+  productFigure.appendChild(productImage);
 
   let productTitle = document.createElement('h3');
   productTitle.classList.add('product-title');
@@ -65,7 +70,7 @@ function createCard(src, alt, name, date, category) {
   buyButton.classList.add('buy-btn');
   buyButton.textContent = 'Купить';
 
-  productCard.appendChild(productImage);
+  productCard.appendChild(productFigure);
   productCard.appendChild(productTitle);
   productCard.appendChild(productDate);
   productCard.appendChild(buyButton);
@@ -150,9 +155,9 @@ document.addEventListener("DOMContentLoaded", function () {
   cpColor.forEach(function (item) {
     item.addEventListener("click", function () {
       cpColor.forEach(function (element) {
-        element.classList.remove("active");
+        element.classList.remove("active_color");
       });
-      item.classList.add("active");
+      item.classList.add("active_color");
       item.querySelector("input").checked = true;
     });
   });
